@@ -1,0 +1,38 @@
+body {background-color: black; color: white; background-image: url(background.jpg); background-repeat: no-repeat; background-position: center center; background-attachment: scroll;}
+
+#test {color: blue; background-color: gray;}
+
+.classtest {color: red;}
+
+div {font-size: 68px; background-image: url(vinkje.jpeg); cursor: help;}
+
+li {background-image: url(ster.png); background-repeat: no-repeat; list-style-type: none; padding-left: 20px; color: red; font-size: 20px;}
+
+.bordertest {
+    border-width: 20px;
+    border-style: ridge;
+    border-color: green;
+}
+
+.bluebordershort {
+    border: 4px ridge blue;
+}
+
+.displaytest {
+    display: inline-block;
+    width: 400px;
+    height: 60px;
+    border: 2px solid red;
+    color: coral;
+    overflow: auto;
+}
+
+.divminmax{
+    width: 280px;
+    padding: 5px;
+    max-width: 200px;
+    max-height: 80px;
+    overflow: auto;
+    color: black;
+    border: 2px solid green;
+}

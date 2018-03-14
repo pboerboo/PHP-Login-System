@@ -1,0 +1,70 @@
+.positiontest {
+    background-color: blue !important;
+    background-image: url(ster.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center top;
+    box-shadow: 10px 10px 20px 4px green;
+    position: absolute; top: 50px; left: 40px;
+    width: 200px;
+    height: 100px;
+    opacity: 0.8;
+    transform: rotate(12deg);
+}
+
+.relativetest {
+    position:  relative; left: -30px;
+}
+
+.basicdiv {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.redborder {
+    border: 1px solid red;
+}
+
+.blackborder {
+    border: 1px solid black;
+}
+
+.absinrel {
+    border: 2px solid green;
+   /* border-top-right-radius: 20px;
+    border-bottom-left-radius: 30px; */
+    border-radius: 10px 50px 6px 0;
+    width: 550px;
+    height: 250px;
+    position: relative;
+    font-size: 11px;
+}
+
+.first u:first-child { 
+    border: 1px solid red;
+    }
+
+.borderImageRepeat {
+    border: 20px solid transparent;
+    /*border-width: 100px;*/
+    padding: 30px;
+    border-image: url(border.png) 30 round;
+}
+
+.borderImageStretch {
+    border: 20px solid transparent;
+    /*border-width: 100px;*/
+    padding: 30px;
+    border-image: url(border.png) 30 stretch;
+}
+
+@font-face {
+    font-family: wildOnes;
+    src: url("Wild Ones Personal Use.ttf"), url("Wild Ones Personal Use.otf");
+}
+
+@font-face {
+    font-family: color;
+    src: url("Color Your World.ttf"), url("Color Your World.otf");
+}
