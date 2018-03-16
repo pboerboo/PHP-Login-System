@@ -1,4 +1,5 @@
 <?php
+
 //Allow the config
 define('__CONFIG__', true);
 //Require the config
@@ -29,7 +30,6 @@ require_once "inc/config.php";
             <br>
             <a href="/PHP-Login-System/register.php">Register</a>
         </div>
-        
 
         <?php require_once "inc/footer.php"; ?>
 

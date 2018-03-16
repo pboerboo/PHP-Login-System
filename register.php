@@ -5,50 +5,52 @@ define('__CONFIG__', true);
 require_once "inc/config.php";
 ?>
 
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
-<html lang="en">
+    <html lang="en">
 
-<head>
-    <Title>Project Pascal</Title>
-    <base href="/" />
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="uikit/css/uikit.min.css" />
+    <head>
+        <Title>Project Pascal</Title>
+        <base href="/" />
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="uikit/css/uikit.min.css" />
 
 
-</head>
+    </head>
 
-<body>
-    <div class="uk-section uk-container">
-        <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid="">
-            <h2>Registration</h2>
+    <body>
+        <div class="uk-section uk-container">
+            <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid="">
+                <h2>Registration</h2>
 
-            <form class="uk-form-stacked js-register">
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-text">Email</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="form-stacked-text" type="email" required="required" placeholder="Your email address">
+                <form class="uk-form-stacked js-register">
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-text">Email</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="form-stacked-text" type="email" required="required" placeholder="Your email address">
+                        </div>
                     </div>
-                </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-text">Password</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="form-stacked-text" type="password" required="required" placeholder="Your password">
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-text">Password</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="form-stacked-text" type="password" required="required" placeholder="Your password">
+                        </div>
                     </div>
-                </div>
+                    
+                    <div class="div uk-margin uk-alert uk-alert-danger js-error" style="display:none"></div>
+                    
+                    <div class="uk-margin">
+                        <button class="uk-button uk-button-default" type="Submit">Register</button>
+                    </div>
 
-                <div class="uk-margin">
-                    <button class="uk-button uk-button-default" type="Submit">Register</button>
-                </div>
-
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
 
 
-<?php require_once "inc/footer.php"; ?>
-   
-</body>
+        <?php require_once "inc/footer.php"; ?>
+
+    </body>
 
 
-</html>
+    </html>
