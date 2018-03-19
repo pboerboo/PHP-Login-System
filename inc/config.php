@@ -4,9 +4,17 @@ if (!defined('__CONFIG__')) {
     exit("You do not have a config file");
 }
 
-//include the DB.php file
-include_once "/inc/classes/DB.php";
+if (!isset($_SESSION)) {
+    session_start();
+}
+//Allow errors
+error_reporting(-1);
+ini_set('display_errors', 'On');
 
-//$con = DB::getConnection();
+//include the  neede php files
+include_once "classes/DB.php";
+include_once "classes/filter.php";
+
+$con = DB::getConnection();
 
 ?>

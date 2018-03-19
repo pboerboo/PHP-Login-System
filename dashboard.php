@@ -6,6 +6,9 @@ define('__CONFIG__', true);
 //Require the config
 require_once "inc/config.php";
 
+echo "The user ID is: " .$_SESSION['user-id'];
+
+
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +21,7 @@ require_once "inc/config.php";
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="follow">
 
-        <Title>Project Pascal</Title>
+        <Title>Project Pascal - Dashboard</Title>
         <base href="/" />
         <!-- UIkit CSS -->
         <link rel="stylesheet" href="uikit/css/uikit.min.css" />
@@ -28,14 +31,7 @@ require_once "inc/config.php";
 
     <body>
         <div class="uk-section uk-container">
-            <?php
-            echo "Vandaag is het: ";
-            echo date("D d M Y")."<br>";
-            ?>
-                <br>
-                <a href="/PHP-Login-System/login.php">Login</a>
-                <br>
-                <a href="/PHP-Login-System/register.php">Register</a>
+          bla   
         </div>
 
         <?php require_once "inc/footer.php"; ?>
