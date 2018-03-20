@@ -35,6 +35,7 @@ $(document)
     .done(function ajaxDone(data) {
         //code when done
         console.log(data)
+        alert("data.redirect")
         if (data.redirect !== undefined) {
             window.location = data.redirect;
         }

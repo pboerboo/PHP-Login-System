@@ -16,18 +16,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = Filter::String($_POST['email']);
     $password = $_POST['password'];
     
-    $findUser = $con->prepare("SELECT user_id, password FROM users WHERE email = LOWER(:email) LIMIT 1");
-    $findUser -> bindParam(':email', $email, PDO::PARAM_STR);
-    $findUser -> execute();
+    $userFound = FindUser($con, $email, true);
     
-    //$userFound = User::Find($email, true);
-    
-    if ($findUser->rowCount() == 1) {
-        // user exists
-        $User = $findUser->fetch(PDO::FETCH_ASSOC);
-        
-        $user_id = (int) $User['user_id'];
-        $hash = (string) $User['password'];
+    if ($userFound) {
+                
+        $user_id = (int) $userFound['user_id'];
+        $hash = (string) $userFound['password'];
         
         if (password_verify($password, $hash)) {
             $return['redirect'] = 'PHP-Login-System/dashboard.php?message=welcome';
